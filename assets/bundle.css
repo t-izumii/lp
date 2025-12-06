@@ -95,14 +95,14 @@
   --vh: 1vh;
   --100vh: 100svh;
   --100vw: 100vw;
-  --window-width: tan(atan2(var(--100vw), 1px));
-  --px: calc(1px * var(--window-width) / 1280);
+  --window-width: 100vw;
+  --px: calc(var(--window-width) / 1280);
   --fz: 1;
 }
 
 @media screen and (max-width: 960px) {
   :root {
-    --px: calc(1px * var(--window-width) / 390);
+    --px: calc(var(--window-width) / 390);
   }
 }
 
