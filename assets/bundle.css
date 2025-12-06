@@ -1313,13 +1313,18 @@ body.is-load .c-kv__text-2 img {
   margin-top: calc(20 * var(--px));
 }
 
-.details:open ._question-number,
-.details:open ._question-text {
+.details[open] ._question-number,
+.details[open] ._question-text {
   opacity: 0.3;
 }
 
-.details:open ._question-icon::before {
+.details[open] ._question-icon::before {
   opacity: 0;
+}
+
+.details ._answer {
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .details ._question {
