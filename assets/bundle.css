@@ -710,7 +710,7 @@ th {
 
 @media screen and (max-width: 960px) {
   .c-kv {
-    height: 100vh;
+    height: 100dvh;
     aspect-ratio: auto;
   }
 }
